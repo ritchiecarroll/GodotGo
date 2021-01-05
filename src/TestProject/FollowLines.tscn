@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://LineExample/LineFollow3D.cs" type="Script" id=1]
+[ext_resource path="res://LineRenderer.gd" type="Script" id=2]
+
+[node name="Spatial" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.08898, -5.04872, 2.95406 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.926016, 0.117877, 0.358608, 0, 0.949994, -0.312269, -0.377485, 0.289166, 0.879709, 1.92028, 9.5251, 2.71927 )
+script = ExtResource( 1 )
+
+[node name="Sphere1" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.8432, 19.8523, -7.38249 )
+
+[node name="Sphere2" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.512, 30.7209, -19.5657 )
+
+[node name="Sphere3" type="CSGSphere" parent="."]
+transform = Transform( -0.999579, 0, 0.029003, 0, 1, 0, -0.029003, 0, -0.999579, -3.89502, 19.9464, -5.05248 )
+
+[node name="Sphere4" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7082, 22.1869, -10.8439 )
+
+[node name="Sphere5" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.25753, 22.0226, -34.955 )
+
+[node name="Sphere6" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0518, 12.3078, -18.5043 )
+
+[node name="Sphere7" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.47649, 8.28672, -13.782 )
+
+[node name="Sphere8" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.04388, 9.63765, -7.4162 )
+
+[node name="Sphere9" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.9562, 12.3384, -6.11776 )
+
+[node name="Cube" type="CSGBox" parent="."]
+transform = Transform( 0.979494, 0.193081, -0.0575344, -0.201471, 0.938706, -0.279715, 0, 0.285571, 0.958357, -11.183, 12.2927, -8.04058 )
+
+[node name="LineRenderer" type="ImmediateGeometry" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.45192 )
+script = ExtResource( 2 )

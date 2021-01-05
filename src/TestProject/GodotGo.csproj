@@ -1,0 +1,13 @@
+<Project Sdk="Godot.NET.Sdk/3.2.3">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fmt_package">
+      <HintPath>go2cs\fmt_package.dll</HintPath>
+    </Reference>
+    <Reference Include="golib">
+      <HintPath>go2cs\golib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
