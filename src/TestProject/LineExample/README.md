@@ -4,9 +4,11 @@ code to make Godot happy, specifically:
 * go2cs supports .NET 5.0 features, such as native sized integers (nint) and
 putting actual method implementations in interfaces. So for Godot code I had
 to replace with normal int types and/or region out code, i.e.,
+```
    #ifdef NET5_0
       ...incompatible code...
    #endif
+```
 
 * I have almost globally implemented "#nullable enable" in generated code from
 go2cs but the Godot version I am using doesn't support this, i.e., v3.2.3 mono,
